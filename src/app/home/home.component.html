@@ -1,0 +1,16 @@
+
+
+<table class="table" border="5">
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td>{{user.id}}</td>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+        
+        <td><button class="btn btn-info btn-sm mr-2"   [routerLink]="['/userdetail']"  (click)="showEditUserForm(user)"  type="submit">edit</button></td>
+        <td><button class="btn btn-danger btn-sm" (click)= "removeuser(usdel)"  >delete</button></td>
+      </tr>
+    </tbody>
+  </table>  
+ 

@@ -1,0 +1,30 @@
+<!--<table class="table" border="5">
+    <tbody>
+        <tr>
+            <th>id</th>
+            <th>username</th>
+        </tr>
+        
+
+      <tr *ngFor="let users of Users">
+        <td>{{users.id}}</td>
+        <td>{{users.username}}</td>
+        
+      </tr>
+    </tbody>
+  </table> -->
+
+
+
+  <form *ngIf="editUserForm">
+    <h2>Edit User Details</h2>
+   
+
+    <p>First Name: <input type="text" name="name" [(ngModel)]="editedUser.name" /></p>
+    <p>User Name: <input type="text" name="username" [(ngModel)]="editedUser.username" /></p>
+    <p>Email: <input type="text" name="email" [(ngModel)]="editedUser.email" /></p>
+   <p>
+      <button type="button" class="btn btn-primary mr-2" (click)="updateUser()">Submit</button>
+      <button type="button" class="btn btn-warning" (click)="cancelEdits()">Cancel</button>
+    </p>
+  </form>

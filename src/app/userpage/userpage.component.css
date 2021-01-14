@@ -1,0 +1,38 @@
+.btn{
+    background-color: black;
+    color: red;
+}
+.delete{
+    color: red;
+    background-color: black;
+}
+.details{
+    margin-block: 30px;
+    padding-left: 200px;
+    }
+.cancel{
+    margin-left:20px;
+}
+.name{
+ margin-left:64px;
+}
+.username{
+    margin-left:35px;
+
+}
+.salary{
+    margin-left:65px;
+
+}
+.age{
+    margin-left:78px;
+
+}
+.phone{
+    margin-left:64px;
+
+}
+.companyname{
+    margin-left:1px;
+
+}
